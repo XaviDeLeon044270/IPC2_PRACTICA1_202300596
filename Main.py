@@ -149,7 +149,8 @@ class Main:
             print(f"Nit: {compra.cliente.nit}")
             print("\nAUTO(S) ADQUIRIDO(S):")
             for auto in compra.listaAutos:
-                print(f"Placa: {auto.placa}, \nMarca: {auto.marca}, \nModelo: {auto.modelo}, \nPrecio: Q{auto.precioUnitario}")
+                print(f"Placa: {auto.placa}, \nMarca: {auto.marca}, \nModelo: {auto.modelo}, \nPrecio: Q{auto.precioUnitario}, \nDescripción: {auto.descripcion}, \n")
+            print(f"\nID de Compra: {compra.id}")
             print(f"\nTOTAL: Q{compra.total}")
             print("==============================================")
             totalGeneral += compra.total
